@@ -4,9 +4,12 @@
 class Money
 {
 private:
-	int dollars =0, cents =0, allCents;
+	int dollars =0, cents =0, allCents=0;
 	
 public:
+	//Maybe this will help?
+	friend class Account;
+
 	Money(const int &nDollars, const int &nCents);
 	
 	friend Money operator+ (Money const &test1, Money const &test2);
