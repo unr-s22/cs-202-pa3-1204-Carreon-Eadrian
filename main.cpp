@@ -39,7 +39,7 @@ int main()
 	std::cout << depositOne+depositTwo << std::endl;
 	std::cout << depositOne-depositTwo << std::endl;
 	
-	//Trying to print the Account interface
+	/*Trying to print the Account interface
 	
 	std::cout << "Account Details" << std::endl;
 	std::cout << "--------------------------" << std::endl;
@@ -56,7 +56,7 @@ int main()
 	std::cout << "(1) " << std::endl;
 	
 	
-
+	*/
 
 
 
