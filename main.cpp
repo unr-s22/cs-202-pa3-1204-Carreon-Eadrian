@@ -29,7 +29,6 @@ int main()
 	
 	//can be deleted with the printVector function later
 	account.printVector();
-	account.printInterface();
 
 	//Unsure where to put this, temporary placement
 	account.printInterface();

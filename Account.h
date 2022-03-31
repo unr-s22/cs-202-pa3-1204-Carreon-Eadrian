@@ -45,24 +45,7 @@ public:
 		//std::cout << withdrawl[2] << std::endl;
 	}
 
-	void printInterface()
-	{
-
-		std::cout << "Account Details" << std::endl;
-		std::cout << "--------------------------" << std::endl;
-		std::cout << "Current Balance:" << account << std::endl;
-		std::cout << "--------------------------" << std::endl;
-		std::cout << "Number of Deposits: 3" << std::endl;
-		std::cout << "--------------------------" << std::endl;
-		std::cout << "(1) " << depositOne << std::endl;
-		std::cout << "(2) " << depositTwo << std::endl;
-		std::cout << "(3) " << depositThree << std::endl;
-		std::cout << "--------------------------" << std::endl;
-		std::cout << "Number of Withdrawls: 1" << std::endl;
-		std::cout << "--------------------------" << std::endl;
-		std::cout << "(1) " << std::endl;
-	
-	}
+	void printInterface(){}
 
 };
 
