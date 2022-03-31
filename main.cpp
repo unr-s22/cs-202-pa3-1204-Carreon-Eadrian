@@ -44,6 +44,10 @@ int main()
     std::cout << "--------------------------" << std::endl;
     std::cout << "Number of Withdrawls: 2" << std::endl;
     std::cout << "--------------------------" << std::endl;
+    std::cout << "(1) " << withdrawlOne << std::endl;
+    std::cout << "(2) " << withdrawlTwo << std::endl;
+    std::cout << "--------------------------" << std::endl;
+    std::cout << "Total: " << std::endl;
     std::cout << "(1) " << account.getBalance(startingBalance.getCents(), flag) << std::endl;
     
     //relational operation overload proofs
