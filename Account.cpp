@@ -32,7 +32,6 @@ std::ostream &operator<< (std::ostream &out, const Account &account)
 //I haven't changed these functions below. I decided to work on one and, if that worked, use it as a template for the others. I only commented them out so that they wouldn't change anything while I as working on the makeDeposit function
 
 /*int makeWithdrawl (std::vector<Money> money)
-=======
 
 
 int makeDeposit (std::vector<Money> money)
