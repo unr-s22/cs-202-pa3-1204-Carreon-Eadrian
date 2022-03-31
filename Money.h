@@ -1,5 +1,7 @@
 #ifndef MONEY_N
 #define MONEY_N
+#include <string>
+
 
 class Money
 {
@@ -31,4 +33,6 @@ public:
     }*/
 
 };
+
+#endif
 
