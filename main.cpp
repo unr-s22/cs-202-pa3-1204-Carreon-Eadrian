@@ -29,6 +29,10 @@ int main()
 	
 	//can be deleted with the printVector function later
 	account.printVector();
+	account.printInterface();
+
+	//Unsure where to put this, temporary placement
+	account.printInterface();
 	
 	std::cout << "This is the initial balance" << std::endl;
 	std::cout << account << std::endl;

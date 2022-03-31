@@ -24,6 +24,8 @@ void Account::makeWithdrawl (Money const m)
 	withdrawl.vector::push_back(m);
 }
 
+
+
 std::ostream &operator<< (std::ostream &out, const Account &account)
 {
 	out << "$" << account.initialBalance * 0.01 << std::endl;
