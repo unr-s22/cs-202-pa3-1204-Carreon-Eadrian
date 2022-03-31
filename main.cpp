@@ -39,6 +39,32 @@ int main()
 	std::cout << depositOne+depositTwo << std::endl;
 	std::cout << depositOne-depositTwo << std::endl;
 	
+	//Trying to print the Account interface
+	
+	std::cout << "Account Details" << std::endl;
+	std::cout << "--------------------------" << std::endl;
+	std::cout << "Current Balance:" << account << std::endl;
+	std::cout << "--------------------------" << std::endl;
+	std::cout << "Number of Deposits: 3" << std::endl;
+	std::cout << "--------------------------" << std::endl;
+	std::cout << "(1) " << depositOne << std::endl;
+	std::cout << "(2) " << depositTwo << std::endl;
+	std::cout << "(3) " << depositThree << std::endl;
+	std::cout << "--------------------------" << std::endl;
+	std::cout << "Number of Withdrawls: 1" << std::endl;
+	std::cout << "--------------------------" << std::endl;
+	std::cout << "(1) " << std::endl;
+	
+	
+
+
+
+
+
+
+
+
+
 	//It says we need code that proves our relational operator overloads worked but I don't really know what to do for that. Like... is it related to the functionality at all or can we literally just print anything? I dunno
 	if (depositOne < depositTwo)
 	{
