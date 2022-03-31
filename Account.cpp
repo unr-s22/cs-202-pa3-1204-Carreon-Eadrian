@@ -10,6 +10,7 @@ Account::Account(const int &allCents): initialBalance{allCents}
 	initialBalance = allCents;
 }
 
+<<<<<<< HEAD
 /*Changed some things for makeDeposit. Added Account:: so that it can access private variables. Changed it to Money type for now but I'm not sure what the return type is supposed to be at the moment. Here are some other things I'm still not sure about:
 
 1.) How to get the deposit amount in from main, since the input is type Money. It might have to pass through Money first but I'm not sure how to do that at the moment :(
@@ -38,6 +39,15 @@ std::ostream &operator<< (std::ostream &out, const Account &account)
 //I haven't changed these functions below. I decided to work on one and, if that worked, use it as a template for the others. I only commented them out so that they wouldn't change anything while I as working on the makeDeposit function
 
 /*int makeWithdrawl (std::vector<Money> money)
+=======
+int makeDeposit (std::vector<Money> money)
+{
+	internalFlag = 1;
+	money.makeDeposit = initialBalance + Account(allCents);
+}
+
+int makeWithdrawl (std::vector<Money> money)
+
 {
 	internalFlag = 1;
 	money.makeWithdrawl = initialBalance - Account(allCents);
@@ -50,4 +60,7 @@ if (internalFlag == 1)
 else
 {
 	return initialBalance;
+<<<<<<< HEAD
 }*/
+
+

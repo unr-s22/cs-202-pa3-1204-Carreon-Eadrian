@@ -11,12 +11,17 @@ friend class Money;
 
 private:
 
+
 	int initialBalance=0;
+
+	int initialBalance;
+
 	bool internalFlag = 0;
 
 public:
 	
 	Account(const int &allCents);
+
 
 	//See cpp for notes on makeDeposit
 	Money makeDeposit(Money const m);
@@ -24,6 +29,12 @@ public:
 	friend std::ostream &operator<<(std::ostream &out, const Account &account);
 
 	//int makeWithdrawl(std::vector<Money> money);
+
+	friend std::ostream &operator<<(std::ostream &out, const Account &Account);
+
+	int makeDeposit(std::vector<Money> money);
+
+	int makeWithdrawl(std::vector<Money> money);
 
 };
 
