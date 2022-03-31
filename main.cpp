@@ -27,12 +27,22 @@ int main()
 	account.makeWithdrawl(withdrawlTwo);
 	//account.makeWithdrawl(withdrawlThree);
 	
-	//can be deleted with the printVector function later
-	account.printVector();
-
-	//Unsure where to put this, temporary placement
 	account.printInterface();
-	
+
+	std::cout << "Account Details" << std::endl;
+	std::cout << "--------------------------" << std::endl;
+	std::cout << "Current Balance:" << account << std::endl;
+	std::cout << "--------------------------" << std::endl;
+	std::cout << "Number of Deposits: 3" << std::endl;
+	std::cout << "--------------------------" << std::endl;
+	std::cout << "(1) " << depositOne << std::endl;
+	std::cout << "(2) " << depositTwo << std::endl;
+	std::cout << "(3) " << depositThree << std::endl;
+	std::cout << "--------------------------" << std::endl;
+	std::cout << "Number of Withdrawls: 1" << std::endl;
+	std::cout << "--------------------------" << std::endl;
+	std::cout << "(1) " << account.getBalance(startingBalance.getCents(), flag) << std::endl;
+
 	std::cout << "This is the initial balance" << std::endl;
 	std::cout << account << std::endl;
 	
@@ -41,7 +51,8 @@ int main()
 	std::cout << depositOne+depositTwo << std::endl;
 	std::cout << depositOne-depositTwo << std::endl;
 	
-	//It says we need code that proves our relational operator overloads worked but I don't really know what to do for that. Like... is it related to the functionality at all or can we literally just print anything? I dunno
+	//Relational operation overload proofs
+	std::cout << std::endl;
 	if (depositOne < depositTwo)
 	{
 		std::cout << "Deposit one < Deposit two" << std::endl;
