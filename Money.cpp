@@ -8,6 +8,12 @@ Money::Money(const int &nDollars, const int &nCents): dollars{nDollars}, cents{n
 	allCents = (dollars*100) + cents;
 }
 
+//getter for cents/allCents
+int Money::getCents()
+{
+	return allCents;
+}
+
 //+ and - overloads
 Money operator + (Money const &test1, Money const &test2)
 {
