@@ -62,7 +62,7 @@ bool operator==(Money const &test1, Money const &test2)
 
 std::ostream &operator<< (std::ostream &out, const Money &money)
 {
-	out << "$" << money.allCents * 0.01;
+	out << "$" << money.allCents;
 }
 
 

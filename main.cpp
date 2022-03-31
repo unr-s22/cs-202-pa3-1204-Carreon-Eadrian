@@ -10,9 +10,14 @@ int main()
 
 	Money check1 (25, 67);
 	Money check2 (45, 21);
+	Money check3 (10, 45);
 	
 	//prints initial balance for now
 	Account account(check1.getCents());
+	
+	account.makeDeposit(check1);
+	account.makeDeposit(check2);
+	account.makeDeposit(check3);
 	
 	std::cout << account << std::endl;
 	
