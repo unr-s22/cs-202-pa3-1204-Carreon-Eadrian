@@ -18,6 +18,8 @@ private:
 
 public:
 	
+	std::vector <Money> depo;
+	
 	Account(const int &allCents);
 
 	//See cpp for notes on makeDeposit
@@ -28,6 +30,13 @@ public:
 	//int makeWithdrawl(std::vector<Money> money);
 
 	friend std::ostream &operator<<(std::ostream &out, const Account &Account);
+	
+	void printVector()
+	{
+		std::cout << depo[0] << std::endl;
+		std::cout << depo[1] << std::endl;
+		std::cout << depo[2] << std::endl;
+	}
 
 	//int makeDeposit(std::vector<Money> money);
 

@@ -14,12 +14,8 @@ void Account::makeDeposit (Money const m)
 {
 	internalFlag = 1;
 	
-	std::vector <Money> depo;
-	depo.push_back(m);
 	
-	std::cout << depo[0] << std::endl;
-	std::cout << depo[1] << std::endl;
-	std::cout << depo[2] << std::endl;
+	depo.vector::push_back(m);
 }
 
 

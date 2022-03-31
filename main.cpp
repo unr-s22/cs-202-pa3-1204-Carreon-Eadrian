@@ -15,12 +15,17 @@ int main()
 	//prints initial balance for now
 	Account account(check1.getCents());
 	
+	std::cout << "These are tests! These three values are what is being stored in the depo vector" << std::endl;
 	account.makeDeposit(check1);
 	account.makeDeposit(check2);
 	account.makeDeposit(check3);
 	
+	account.printVector();
+	
+	std::cout << "This is the initial balance" << std::endl;
 	std::cout << account << std::endl;
 	
+	std::cout << "This is some overload checks currently check1 and check2" << std::endl;
 	//checks for money operator overloads
 	std::cout << check1+check2 << std::endl;
 	std::cout << check1-check2 << std::endl;
