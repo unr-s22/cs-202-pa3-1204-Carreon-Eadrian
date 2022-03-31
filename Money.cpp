@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include "Money.h"
 
 //converts dollars into pure cents
@@ -62,7 +63,7 @@ bool operator==(Money const &test1, Money const &test2)
 
 std::ostream &operator<< (std::ostream &out, const Money &money)
 {
-	out << "$" << money.allCents * 0.01;
+	out << "$" << std::setprecision(2) << std::fixed << money.allCents * 0.01;
 }
 
 

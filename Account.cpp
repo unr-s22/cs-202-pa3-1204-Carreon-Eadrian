@@ -14,10 +14,15 @@ void Account::makeDeposit (Money const m)
 {
 	internalFlag = 1;
 	
-	
 	depo.vector::push_back(m);
 }
 
+void Account::makeWithdrawl (Money const m)
+{
+	internalFlag = 1;
+	
+	withdrawl.vector::push_back(m);
+}
 
 std::ostream &operator<< (std::ostream &out, const Account &account)
 {
@@ -26,29 +31,13 @@ std::ostream &operator<< (std::ostream &out, const Account &account)
 
 //I haven't changed these functions below. I decided to work on one and, if that worked, use it as a template for the others. I only commented them out so that they wouldn't change anything while I as working on the makeDeposit function
 
-/*int makeWithdrawl (std::vector<Money> money)
-=======
-int makeDeposit (std::vector<Money> money)
-{
-	internalFlag = 1;
-	money.makeDeposit = initialBalance + Account(allCents);
-}
-
-int makeWithdrawl (std::vector<Money> money)
-
-{
-	internalFlag = 1;
-	money.makeWithdrawl = initialBalance - Account(allCents);
-}
-
-if (internalFlag == 1)
+/*if (internalFlag == 1)
 {
 	return initialBalance;
 }
 else
 {
 	return initialBalance;
-<<<<<<< HEAD
 }*/
 
 
